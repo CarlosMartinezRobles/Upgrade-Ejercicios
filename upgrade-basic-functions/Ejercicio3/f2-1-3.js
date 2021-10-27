@@ -1,12 +1,11 @@
 const numbers = [1, 2, 3, 5, 45, 37, 58];
-
-let result =0;
-for(i=0; i<numbers.length;i++){
-  result = (numbers[i]*2);
- };
-console.log(result);
-function sumAll() {
- 
+total = sum_arr(numbers);
+function sum_arr(numbers) {
+   let total=0;
+   numbers.forEach(function (numero){
+      total+=numero;
+   })
+   return total;
 }
-sumAll();
+sum_arr(total);
 
