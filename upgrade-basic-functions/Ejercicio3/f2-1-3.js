@@ -1,11 +1,9 @@
-const numbers = [1, 2, 3, 5, 45, 37, 58];
-total = sum_arr(numbers);
-function sum_arr(numbers) {
-   let total=0;
-   numbers.forEach(function (numero){
-      total+=numero;
-   })
-   return total;
+const numbers = [1, 2, 15, 5, 45, 37, 58];
+let suma=0;
+function sumaTotal (i){
+   suma=i+suma;
+   console.log(i);
 }
-sum_arr(total);
+numbers.forEach(sumaTotal)
 
+console.log(suma);

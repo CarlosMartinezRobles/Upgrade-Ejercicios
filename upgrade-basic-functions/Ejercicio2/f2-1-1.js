@@ -10,7 +10,5 @@ function maslargo(arr){
   }
   return nombreLargo;
 } 
-  
-
 let heroeLargo =  maslargo (avengers);
 console.log(heroeLargo);
