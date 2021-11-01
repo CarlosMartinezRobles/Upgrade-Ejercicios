@@ -1,4 +1,4 @@
-const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+const avenge = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 function maslargo(arr){
   let nombreLargo='';
   for (let i = 0; i < arr.length; i++) {
@@ -10,5 +10,6 @@ function maslargo(arr){
   }
   return nombreLargo;
 } 
-let heroeLargo =  maslargo (avengers);
+let heroeLargo =  maslargo (avenge);
+maslargo (avenge);
 console.log(heroeLargo);
