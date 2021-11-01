@@ -8,3 +8,11 @@ const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
  car1.finalPrice= (car2.basePrice + globalBasePrice);
  console.log(car1.finalPrice);
  console.log(car2.finalPrice);
+
+ function finalPrice (coche){
+     coche.finalprice = coche.basePrice +globalBasePrice;
+     console.log(coche.finalPrice);
+ }
+
+ finalPrice(car1);
+ finalPrice(car2);
