@@ -1,24 +1,13 @@
-const duplicates = [
-  'sushi',
-  'pizza',
-  'burger',
-  'potatoe',
-  'pasta',
-  'ice-cream',
-  'pizza',
-  'chicken',
-  'onion rings',
-  'pasta',
-  'soda'
-];
-let noDoubles =[];
-noDoubles = duplicates.filter((element,allOfElements)=>{
-  return duplicates.indexOf(element) === allOfElements;})
-console.log(noDoubles); 
-///////////////////////////////////////////////////////////
-duplicates.forEach((item)=>{
-    if(!noDoubles.includes(item)){
-    noDoubles.push(item);
-  }
-})
-console.log(noDoubles);
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+let sumElements=0;
+function averageWord(param) {
+param.forEach(
+  function (element){
+  if (typeof element === 'string'){
+    sumElements+=element.length;
+  }else{sumElements+= element}
+});
+console.log(sumElements);
+}
+
+averageWord(mixedElements);
