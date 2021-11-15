@@ -22,5 +22,21 @@ console.log(textMe[1]);
 console.log(textMe[2]);
 console.log(textMe[3]);
 ///////////////////////////////////////////////////////
-let textRick= document.querySelectorAll(".testMe"); //1.5
+let textRick= document.querySelector("testMe"); //1.5
 console.log(textRick);//no se como va lo de data-selection
+////////////////////////////////////////////////////////////////////
+
+let atributo2 = document.querySelectorAll('span');
+let contador = 0;
+let personajeABuscar = (3 - 1);
+console.log(personajeABuscar);
+atributo2.forEach(
+    function (element) {
+        if (contador == personajeABuscar){
+        console.log(element.getAttribute('data-function').nodeValue);
+        }
+        contador += 1;
+});
+
+////////////////////////////////////////////////////////////////////////////////////
+
